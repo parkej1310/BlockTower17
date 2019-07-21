@@ -1,9 +1,9 @@
 
-public class Character {
+abstract class Character {
 	private int health;
 	private String name;
 	private int attack;
-	
+
 	public int getHealth() {
 		return health;
 	}
@@ -25,5 +25,8 @@ public class Character {
 	public void loseHealth(int damage) {
 		health -= damage;
 	}
-	
+	public String toString(){
+		return name + " , Health: " + health + " , Attack: " + attack;
+	}
+
 }
