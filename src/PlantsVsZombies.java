@@ -1,14 +1,24 @@
 import java.util.ArrayList;
 
 public class PlantsVsZombies{
-  private ArrayList<Character> characters = new ArrayList<Character>();
+  private ArrayList<GameCharacter> characters = new ArrayList<GameCharacter>();
   public int sunlight = 50;
   //ArrayList<Lawnmower> lawnmowers = new ArrayList<Lawnmower>;
+  
+
+  public void addCharacter(GameCharacter character) {
+	  characters.add(character);
+  }
   
   public void addSunlight(int amount) {
 	  sunlight += amount;
   }
-  public static void main(String[] args){
-    
+  public String toString() {
+	  String str = "";
+	  for (GameCharacter c : characters) {
+		  str += c.toString() + "\n";
+	  }
+	  return str;
   }
+  
 }

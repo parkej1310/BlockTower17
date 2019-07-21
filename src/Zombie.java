@@ -1,6 +1,6 @@
 
 
-public class Zombie extends Character{
+public class Zombie extends GameCharacter{
 	private int speed = 50;
 	private int row; //Which row the zombie will start walking down from
 	private double position = 50.0; //50.0 is the very right side of the garden

@@ -1,8 +1,12 @@
 
-abstract class Character {
+public class GameCharacter {
 	private int health;
 	private String name;
 	private int attack;
+	
+	public GameCharacter() {
+		
+	}
 
 	public int getHealth() {
 		return health;
@@ -30,3 +34,5 @@ abstract class Character {
 	}
 
 }
+
+
