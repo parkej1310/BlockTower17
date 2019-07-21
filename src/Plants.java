@@ -1,6 +1,6 @@
 
 public class Plants extends Character{
-	Location location;
+	PlantLocation location;
 	int price;
 
 }
