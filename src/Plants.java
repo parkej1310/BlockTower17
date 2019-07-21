@@ -1,5 +1,5 @@
 
-abstract class Plants extends Character{
+public class Plants extends GameCharacter{
 	private PlantLocation location;
 	private int price;
 	public PlantLocation getLocation(){
