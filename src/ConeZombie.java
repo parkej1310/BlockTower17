@@ -5,6 +5,6 @@ public class ConeZombie extends Zombie{
 		setHealth(560);
 		setRow();
 	}
-
+	
 
 }
