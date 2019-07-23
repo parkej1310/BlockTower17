@@ -1,5 +1,5 @@
 
-public class FrozenPeaShooter extends Plants{
+public class FrozenPeaShooter extends PeaShooter{
 	public FrozenPeaShooter(){
 		setName("Frozen PeaShooter");
 		setAttack(15);

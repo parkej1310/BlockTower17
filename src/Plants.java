@@ -15,5 +15,14 @@ public class Plants extends GameCharacter{
 	public void setPrice(int price) {
 		this.price = price;
 	}
+	public int getPrice() {
+		return price;
+	}
+	public int getRow() {
+		return row;
+	}
+	public int getColumn() {
+		return column;
+	}
 
 }

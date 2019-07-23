@@ -29,11 +29,5 @@ public class Zombie extends GameCharacter{
 	public void move(int speed) {
 		
 	}
-	public static void main(String[] args) {
-		Zombie z1 = new Zombie();
-		z1.setRow();
-		System.out.println(z1.getRow());
-		System.out.println(z1.getHealth());
-		System.out.println(z1.getName());
-	}
+	
 }

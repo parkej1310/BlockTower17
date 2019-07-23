@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class PlantsVsZombies{
-  private ArrayList<GameCharacter> characters = new ArrayList<GameCharacter>();
+  private ArrayList<Zombie> zombies = new ArrayList<Zombie>();
   private Plants[][] Garden = {{new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
 	  new Plants(), new Plants(), new Plants()}, {new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
 		  new Plants(), new Plants(), new Plants()}, {new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
@@ -10,11 +10,9 @@ public class PlantsVsZombies{
 					  new Plants(), new Plants(), new Plants()}};
   
   private int sunlight = 50;
-  //ArrayList<Lawnmower> lawnmowers = new ArrayList<Lawnmower>;
-  
 
-  public void addZombie(GameCharacter character) {
-	  characters.add(character);
+  public void addZombie(Zombie z) {
+	  zombies.add(z);
   }
   
   public Plants[][] getGarden() {
@@ -41,8 +39,8 @@ public class PlantsVsZombies{
   }
   public String toString() {
 	  String str = "";
-	  for (GameCharacter c : characters) {
-		  str += c.toString() + "\n";
+	  for (Zombie z : zombies) {
+		  str += z.toString() + "\n";
 	  }
 	  return str;
   }
