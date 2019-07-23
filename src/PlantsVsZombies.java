@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+//The class that is used to create objects of each level
 public class PlantsVsZombies{
   private ArrayList<Zombie> zombies = new ArrayList<Zombie>();
   private Plants[][] Garden = {{new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
