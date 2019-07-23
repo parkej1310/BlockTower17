@@ -1,7 +1,7 @@
 
 public class CherryBomb extends Plants {
 	public CherryBomb(){
-		setName("");
+		setName("Cherry Bomb");
 		setAttack(10000);
 		setPrice(150);
 	}
