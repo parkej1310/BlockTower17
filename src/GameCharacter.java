@@ -1,7 +1,7 @@
 
 public class GameCharacter {
 	private int health;
-	private String name;
+	private String name = " ";
 	private int attack;
 	
 	public GameCharacter() {

@@ -1,12 +1,16 @@
 
 public class Plants extends GameCharacter{
-	private PlantLocation location;
 	private int price;
-	public PlantLocation getLocation(){
-		return location;
+	private int row;
+	private int column;
+	public String getLocation(){
+		return "(" + row + ", " + column + ")";
 	}
-	public void setLocation(PlantLocation location){
-		this.location = location;
+	public void setRow(int row){
+		this.row = row;
+	}
+	public void setColumn(int column){
+		this.column = column;
 	}
 	public void setPrice(int price) {
 		this.price = price;

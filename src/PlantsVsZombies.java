@@ -2,7 +2,13 @@ import java.util.ArrayList;
 
 public class PlantsVsZombies{
   private ArrayList<GameCharacter> characters = new ArrayList<GameCharacter>();
-  private char[][] Garden = new char[5][9];
+  private Plants[][] Garden = {{new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
+	  new Plants(), new Plants(), new Plants()}, {new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
+		  new Plants(), new Plants(), new Plants()}, {new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
+			  new Plants(), new Plants(), new Plants()}, {new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
+				  new Plants(), new Plants(), new Plants()}, {new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), new Plants(), 
+					  new Plants(), new Plants(), new Plants()}};
+  
   private int sunlight = 50;
   //ArrayList<Lawnmower> lawnmowers = new ArrayList<Lawnmower>;
   
@@ -11,11 +17,11 @@ public class PlantsVsZombies{
 	  characters.add(character);
   }
   
-  public char[][] getGarden() {
+  public Plants[][] getGarden() {
 	  return Garden;
   }
   
-  public static void printGarden(char mat[][]) { 
+  public static void printGarden(Plants mat[][]) { 
 	  System.out.print("p = peashooter" + "\n" + "s = sunflower" + "\n" + "w = wallnut" + "\n" + "c = cherrybomb" + "\n" + "f = frozen peashooter" + "\n" );
 	  System.out.println("Garden:");
 	  System.out.println("------------------");
@@ -24,7 +30,7 @@ public class PlantsVsZombies{
 
           // Loop through all elements of current row 
           for (int j = 0; j < mat[i].length; j++) {
-              System.out.print(mat[i][j] + " "); 
+              System.out.print(mat[i][j].getName().charAt(0) + " "); 
           }
           System.out.print("\n");
       }	
