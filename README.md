@@ -1,7 +1,7 @@
 # BlockTower17
 Block Tower is a game inspired from 'Plants vs Zombies'. 
 
-Project for CPSC 231
+Project for CPSC 233
 
 Group 17:
 Nicholas McLaughlin
